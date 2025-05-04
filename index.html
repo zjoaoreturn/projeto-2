@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
+
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/tablet.css">
+    <link rel="stylesheet" href="estilo/pc.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <h1>Meu Site</h1>
+    <header>
+        <div id="imagem"></div>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <p>Seja Bem-Vindo, Novamente.</p>
+    
+        <form action="login.js" method="post" autocomplete="on" >
+            <section>
+                <div class="campo">
+
+                <span class="material-symbols-outlined">person</span>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="user">
+                <label for="iemail">email</label>
+        
+            </div>
+
+            <div class="campo">
+
+                <span class="material-symbols-outlined">Lock</span>
+                <input type="password" name="senha" id="isenha" required minlength="8" autocomplete="current-password" placeholder="password">
+                <label for="isenha">senha</label>
+
+            </div>
+            </section>
+            
+
+            <div id="area">
+                <input type="submit" value="Entrar" id="submit">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+            
+ 
+        </form>
+    </main>
+    
 </body>
 </html>
