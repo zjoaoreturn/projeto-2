@@ -12,6 +12,10 @@
 
 }
 
+body{
+    height: calc(100vh - 40vh);
+}
+
 #imagem{
     background-image: url(../imagens/foto-login.jpg);
     background-size: cover;
@@ -21,7 +25,7 @@
 
 main{
     background-color: var(--cinza);
-    height: calc(100vh - 40vh);
+    height: 100%;
 }
 
 h1{
@@ -29,13 +33,14 @@ h1{
     color: var(--bege);
     text-shadow: 0px 1px 3px black;
     padding-top: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 p{
     padding: 5px;
     text-align: center;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.557);
+    font-size: 1.2em;
 }
 
 form{
@@ -51,19 +56,19 @@ form{
 
 .campo span{
     transform: translateY(8px);
-    font-size: 1.7em;
+    font-size: 2em;
     color: var(--laranja-escuro);
-    width: 30px;
+    width: 40px;
 }
 
 .campo input{
     background-color: var(--laranja-escuro);
     border: 2px solid var(--lilás);
-    height: 35px;
+    height: 40px;
     border-radius: 15px;
-    text-indent: 6px;
+    text-indent: 8px;
     outline: none;
-    width: 200px;
+    width: 250px;
     box-shadow: 0px 2px 4px #dbc2a7;
 }
 
@@ -82,8 +87,8 @@ form{
 
 #submit{
     margin-top: 20px;
-    height: 30px;
-    width: 35%;
+    height: 35px;
+    width: 40%;
     background-color: var(--bege);
     color: black;
     border: none;
@@ -103,6 +108,10 @@ a{
     text-decoration: none;
     color: var(--laranja-escuro);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.615);
+}
+
+a:hover{
+    color: black;
 }
 
 input::placeholder{
