@@ -1,3 +1,14 @@
+/* 
+
+Typical Device Breakpoints 
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992px
+Desktop: 992 até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
 *{
     padding: 0px;
     margin: 0px;
@@ -12,10 +23,6 @@
 
 }
 
-body{
-    height: calc(100vh - 40vh);
-}
-
 #imagem{
     background-image: url(../imagens/foto-login.jpg);
     background-size: cover;
@@ -25,7 +32,7 @@ body{
 
 main{
     background-color: var(--cinza);
-    height: 100%;
+    height: calc(100vh - 40vh);
 }
 
 h1{
@@ -43,10 +50,16 @@ p{
     font-size: 1.2em;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+}
+
 form{
     display: block;
     margin-top: 8px;
     text-align: center;
+    width: 350px;
 }
 
 .campo{
@@ -55,10 +68,9 @@ form{
 }
 
 .campo span{
-    transform: translateY(8px);
     font-size: 2em;
     color: var(--laranja-escuro);
-    width: 40px;
+    transform: translateY(8px);
 }
 
 .campo input{
@@ -94,7 +106,6 @@ form{
     border: none;
     border-radius: 10px;
     box-shadow: 0px 2px 4px #8d6738c5;
-    
 }
 
 #submit:hover{
@@ -111,7 +122,7 @@ a{
 }
 
 a:hover{
-    color: black;
+    color: var(--bege);
 }
 
 input::placeholder{

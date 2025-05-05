@@ -1,0 +1,78 @@
+/* Tablet */
+
+/* 
+
+Typical Device Breakpoints 
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992px
+Desktop: 992 até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body{
+        height: calc(100vh - 50vh);
+    }
+
+    #imagem{
+        height: 50vh;
+    }
+
+    h1{
+        font-size: 3.5em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+
+    main{
+        height: calc(100vh - 50vh);
+    }
+
+    form{
+        width: 325px;
+    }
+
+    .campo{
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+        border-radius: 15px;
+    }
+
+    .campo span{
+        width: 50px;
+        font-size: 3em;
+        transform: translateY(8px);
+    }
+
+    .campo input{
+        height: 50px;
+        transform: translate(10px, -11px);
+        border: 3px solid black;
+        box-shadow: none;
+    }
+
+    #submit{
+        height: 50px;
+        width: 250px;
+        font-size: 1.5em;
+    }
+
+    input::placeholder{
+        font-size: 1.5em;
+    }
+
+    input:focus-within{
+        font-size: 1.2em;
+    }
+
+    a{
+        font-size: 1.5em;
+    }
+
+}
