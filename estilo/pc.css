@@ -9,6 +9,71 @@ Grandes Telas: acima de 1200px
 
 */
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 1200px){
+
+    #imagem{
+        display: none;
+    }
+
+    body{
+        background-image: url(../imagens/foto-login.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    main{
+        background-color: #b9a28a59;
+        border-radius: 30px;
+        height: 400px;
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+    }
+
+    h1{
+        color: black;
+    }
+
+    .campo{
+        background-color: white;
+        height: 50px;
+        border-radius: 15px;
+    }
+
+    .campo span{
+        font-size: 2.5em;
+        color: black;
+        transform: translateY(5px);
+    }
+
+    .campo input{
+        background-color: black;
+        height: 45px;
+        width: 300px;
+        box-shadow: 0px 2px 4px white;
+
+        transform: translate(0px, -10px);
+    }
+
+    #submit{
+        color: white;
+        background-color: black;
+        box-shadow: 0px 2px 4px white;
+        width: 200px;
+        height: 40px;
+    }
+
+    a{
+        color: black;
+    }
+
+    a:hover{
+        color: white;
+    }
 
 }
